@@ -1,6 +1,8 @@
 module.exports = {
   'env': {
-    'browser': true
+    'browser': true,
+    'node': true,
+    'mocha': true,
   },
   'parser': 'babel-eslint',
   'extends': 'airbnb',
@@ -15,6 +17,16 @@ module.exports = {
     'react/jsx-filename-extension': 0,
     'react/prefer-stateless-function': 0,
     'strict': 0,
-    'no-console': ['error', {allow: ['warn', 'error']}],
+    'no-console': ['error', { allow: ['warn', 'error'] }],
   },
+  'overrides': [
+    {
+      'files': ['nwb.config.js'],
+      'rules': {
+        'eslint-global-require': 'off',
+        'import/no-extraneous-dependencies': 'off',
+        'max-len': 'off',
+      }
+    }
+  ]
 };

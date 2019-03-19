@@ -3,7 +3,7 @@
 /**
  * The basis for ingest and search documents.
  */
-export default class AbstractDocument {
+class AbstractDocument {
   constructor(fields: Map<string, Array<string>>) {
     this.fields = fields;
   }
@@ -12,7 +12,7 @@ export default class AbstractDocument {
    * A map of the document's field names to a list of their values
    * (the values are in an arry even if there is only one).
    */
-  fields: Map<string, Array<string>>;
+  fields: Map<string, Array<stßring>>;
 
   getFirstValue(fieldName: string): string {
     let result = '';
@@ -36,3 +36,5 @@ export default class AbstractDocument {
     return result;
   }
 }
+
+export default AbstractDocument;

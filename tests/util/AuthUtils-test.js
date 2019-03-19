@@ -1,6 +1,6 @@
 import expect from 'expect';
-import AuthUtils from '../../src/util/AuthUtils';
-import ObjectUtils from '../../src/util/ObjectUtils';
+import AuthUtils from 'src/util/AuthUtils';
+import ObjectUtils from 'src/util/ObjectUtils';
 
 const testConfig = {
   ALL: {
