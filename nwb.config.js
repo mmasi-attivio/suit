@@ -7,10 +7,4 @@ module.exports = {
   webpack: {
     uglify: false,
   },
-  karma: {
-    frameworks: ['mocha', 'chai', 'chai-as-promised'],
-    plugins: [
-      require('karma-chai-plugins'),
-    ],
-  },
 };

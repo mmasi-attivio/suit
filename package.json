@@ -94,6 +94,7 @@
   "devDependencies": {
     "babel-eslint": "7.2.3",
     "chai": "^4.2.0",
+    "chai-as-promised": "^7.1.1",
     "create-nwb-webpack-config": "1.0.0",
     "css-loader": "1.0.1",
     "documentation": "8.1.2",
