@@ -110,7 +110,7 @@ class SearchResultTags extends React.Component<SearchResultTagsDefaultProps, Sea
 
   state: SearchResultTagsState;
 
-  onEscape() {
+  onEscape = () => {
     this.setState({
       newTag: '',
       adding: false,
@@ -118,7 +118,6 @@ class SearchResultTags extends React.Component<SearchResultTagsDefaultProps, Sea
   }
 
   inputField: ?HTMLInputElement;
-
 
   updateTags(tags: Array<string>) {
     if (this.context.searcher) {
